@@ -17,7 +17,7 @@ var app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-const port = 3001;
+const port = process.argv[2];
 
 app.listen(port, function() {
     console.log('listening on port:' + port);
